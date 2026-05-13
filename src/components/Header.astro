@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import Logo from '../assets/death-knot-logo.svg';
+import Logo from '../assets/death-knot-logo-transparent.png';
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
@@ -50,8 +50,10 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0.75em 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: rgba(8, 8, 8, 0.9);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 35%);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 	}
 
 	.brand {
@@ -84,7 +86,7 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: rgb(var(--black));
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
