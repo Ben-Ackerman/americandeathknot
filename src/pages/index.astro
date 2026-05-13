@@ -1,8 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import LogoPng from '../assets/death-knot-logo.png';
 ---
 
 <!doctype html>
@@ -13,6 +15,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
+			<Image src={LogoPng} alt="site logo"/>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
