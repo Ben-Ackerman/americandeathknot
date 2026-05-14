@@ -11,13 +11,13 @@ export default defineConfig({
 	fonts: [
 		{
 			provider: fontProviders.local(),
-			name: 'Michroma',
-			cssVariable: '--font-michroma',
-			fallbacks: ['sans-serif'],
+			name: 'Playfair Display',
+			cssVariable: '--font-playfair-display',
+			fallbacks: ['serif'],
 			options: {
 				variants: [
 					{
-						src: ['./src/assets/fonts/michroma-regular.woff'],
+						src: ['./src/assets/fonts/playfair-display.woff'],
 						weight: 400,
 						style: 'normal',
 						display: 'swap',
